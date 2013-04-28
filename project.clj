@@ -18,8 +18,8 @@
                 {:source-paths ["src/cljs_stl/spectral"],
                  :id "spectral",
                  :compiler {:output-to "spectral_norm.js",
-                            :optimizations :advanced}
-                            :pretty-print false}
+                            :optimizations :advanced
+                            :pretty-print false}}
                  {:source-paths ["src/cljs_stl/spectral"],
                  :id "spectral_pp",
                  :compiler {:output-to "spectral_norm_pp.js",
