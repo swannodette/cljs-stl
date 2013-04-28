@@ -19,6 +19,10 @@
                  :id "spectral",
                  :compiler {:output-to "spectral_norm.js",
                             :optimizations :advanced}}
+                 {:source-paths ["src/cljs_stl/spectral"],
+                 :id "spectral_pp",
+                 :compiler {:output-to "spectral_norm_pp.js",
+                            :optimizations :advanced}}
                 {:source-paths ["src/cljs_stl/zebra"],
                  :id "zebra",
                  :compiler {:output-to "zebra.js",
