@@ -20,12 +20,37 @@
                  :compiler {:output-to "spectral_norm.js",
                             :optimizations :advanced
                             :pretty-print false}}
-                 {:source-paths ["src/cljs_stl/spectral"],
+                {:source-paths ["src/cljs_stl/spectral"],
                  :id "spectral_pp",
                  :compiler {:output-to "spectral_norm_pp.js",
                             :optimizations :advanced}}
+                {:source-paths ["src/cljs_stl/spectral"],
+                 :id "spectral_none",
+                 :compiler {:output-to "spectral_norm_none.js",
+                            :optimizations :none
+                            :pretty-print false}}
+                {:source-paths ["src/cljs_stl/spectral"],
+                 :id "spectral_ws",
+                 :compiler {:output-to "spectral_norm_ws.js",
+                            :optimizations :whitespace
+                            :pretty-print false}}
+                {:source-paths ["src/cljs_stl/hello_world"],
+                 :id "hello",
+                 :compiler {:output-to "hello_world.js",
+                            :pretty-print false
+                            :optimizations :advanced}}
+                {:source-paths ["src/cljs_stl/hello_world"],
+                 :id "hello_pp",
+                 :compiler {:output-to "hello_world_pp.js",
+                            :optimizations :advanced}}
+                {:source-paths ["src/cljs_stl/hello_world"],
+                 :id "hello_none",
+                 :compiler {:output-to "hello_world_none.js",
+                            :optimizations :none
+                            :pretty-print false}}
                 {:source-paths ["src/cljs_stl/zebra"],
+
                  :id "zebra",
                  :compiler {:output-to "zebra.js",
-                            :pretty-print true
+                            :pretty-print false
                             :optimizations :advanced}}]})
